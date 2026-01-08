@@ -40,7 +40,6 @@ const Testimonials = () => {
     },
   ]
 
-  const [activeIndex, setActiveIndex] = useState(0)
 
   return (
     <section id="customers" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-50/50 to-purple-50/50 dark:from-dark-800/30 dark:to-dark-900/30">
