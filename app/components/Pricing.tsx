@@ -141,7 +141,7 @@ const Pricing = () => {
               </div>
 
               <div className="mb-8">
-                <h4 className="font-semibold mb-4">What's included:</h4>
+                <h4 className="font-semibold mb-4">{"What's included:"}</h4>
                 <ul className="space-y-3">
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center">

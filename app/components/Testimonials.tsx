@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { FiStar } from 'react-icons/fi'
-import { useState } from 'react'
 
 const Testimonials = () => {
   const testimonials = [
@@ -64,7 +63,7 @@ const Testimonials = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {testimonials.slice(0, 2).map((testimonial, index) => (
+          {testimonials.slice(0, 4).map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -89,7 +88,7 @@ const Testimonials = () => {
                 </div>
               </div>
               <p className="text-lg italic text-dark-700 dark:text-dark-300">
-                "{testimonial.content}"
+                {`"${testimonial.content}"`}
               </p>
             </motion.div>
           ))}
